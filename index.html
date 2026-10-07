@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muhami — The Intelligent Native Desktop Assistant for Turkish Advocates</title>
+  <meta name="description" content="Muhami is a local-first, privacy-compliant AI co-counsel designed specifically for Turkish lawyers. Court-verified case law, UYAP .udf petition generation, deterministic legal math, and KVKK anonymization.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220%22 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚖️</text></svg>">
+</head>
+<body>
+  <div class="glow"></div>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="container nav-inner">
+      <div class="brand">
+        <div class="brand-mark">⚖</div>
+        <span>Muhami</span>
+      </div>
+      <div class="nav-links">
+        <a href="#features">Capabilities</a>
+        <a href="#architecture">Architecture</a>
+        <a href="#founder">Founder</a>
+        <a href="mailto:contact@muhami.co" class="btn btn-primary" style="padding: 8px 16px; font-size: 0.85rem;">Request Beta Access</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="container">
+      <div class="badge">
+        <span class="dot"></span>
+        <span>Private Beta • Built for Turkish Legal Practice</span>
+      </div>
+      <h1>The Intelligent Native Co-Counsel for <span class="accent">Turkish Advocates</span></h1>
+      <p class="lead">
+        Muhami combines high-performance local AI with real-time Turkish case-law verification. 
+        Draft UYAP-ready petitions, cross-examine evidence, and calculate procedural deadlines with zero confidential data leakage.
+      </p>
+      <div class="hero-cta">
+        <a href="mailto:contact@muhami.co" class="btn btn-primary">Request Private Beta</a>
+        <a href="#architecture" class="btn btn-ghost">Explore Architecture ↓</a>
+      </div>
+
+      <!-- App Window Mockup -->
+      <div class="window">
+        <div class="window-bar">
+          <span style="background:#ff5f56;"></span>
+          <span style="background:#ffbd2e;"></span>
+          <span style="background:#27c93f;"></span>
+          <span class="t">Muhami — Appeal Petition Draft (UYAP Compliant)</span>
+        </div>
+        <div class="window-body">
+          <div class="side">
+            <div class="on">📄 Petition Builder</div>
+            <div>⚖ Precedent Verifier (MCP)</div>
+            <div>📅 Deadline & Tariff Engine</div>
+            <div>🛡 KVKK Anonymizer</div>
+            <div>🔍 Case File Inspector</div>
+          </div>
+          <div class="main">
+            <div class="msg user">
+              Draft an appellate brief for our commercial dispute; verify precedents regarding TBK Art. 182/3 and output clean UYAP .udf format.
+            </div>
+            <div class="msg ai">
+              <strong>Appellate Ground 1:</strong> Re-examined penalty clause tenkis pursuant to TBK Art. 182/3.<br>
+              <span class="chip ok">✓ Verified Precedent: Yargıtay 11. HD, 2023/4112 E., 2024/189 K.</span>
+              <span class="chip ok">✓ KVKK Anonymized Locally</span>
+              <span class="chip ok">✓ Exported to native UYAP .udf XML format</span>
+              <p style="margin-top: 10px; color: var(--text-2); font-size: 0.85rem;">
+                All monetary statutory appeal thresholds (HMK Ek m. 1) checked and confirmed eligible.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Core Differentiator Section -->
+  <section id="features">
+    <div class="container">
+      <div class="eyebrow">Enterprise-Grade Legal Engineering</div>
+      <h2 class="section-title">Engineered to eliminate the risks of generic chatbots.</h2>
+      <p class="section-sub">Standard large language models hallucinate legal citations and risk client confidentiality. Muhami is designed from the ground up for strict courtroom adherence.</p>
+
+      <div class="grid grid-3">
+        <div class="card">
+          <div class="ico">🛡</div>
+          <h3>Local-First KVKK Protection</h3>
+          <p>Sensitive client information—Turkish ID numbers, addresses, and phone records—is sanitized directly on device before any external model interaction.</p>
+        </div>
+        <div class="card">
+          <div class="ico">🏛</div>
+          <h3>Live Judicial MCP Verification</h3>
+          <p>Every case citation is checked in real-time against official judicial databases (Yargıtay, Danıştay, Constitutional Court) via a dedicated MCP server.</p>
+        </div>
+        <div class="card">
+          <div class="ico">📄</div>
+          <h3>Native UYAP .udf Generation</h3>
+          <p>Export petitions straight into Turkish e-judiciary (.udf XML) and DOCX formats with exact typography, tabs, and statutory structural requirements.</p>
+        </div>
+        <div class="card">
+          <div class="ico">📐</div>
+          <h3>Deterministic Legal Calculators</h3>
+          <p>Statutory interest, AAÜT attorney fees, execution deposits, and appeal deadlines are computed via zero-hallucination deterministic Python engines.</p>
+        </div>
+        <div class="card">
+          <div class="ico">🔍</div>
+          <h3>Full Dossier Long-Context Audit</h3>
+          <p>Upload entire indictments, expert reports, and trial minutes. Muhami scans for procedural violations, contradiction trees, and grounds for reversal.</p>
+        </div>
+        <div class="card">
+          <div class="ico">⚡</div>
+          <h3>Native macOS Performance</h3>
+          <p>Engineered with Apple design aesthetics, hardware acceleration, and local SQLite/vector persistence for blazing-fast responsiveness.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Architecture Section -->
+  <section id="architecture" style="background: rgba(255, 255, 255, 0.015); border-block: 1px solid var(--border);">
+    <div class="container">
+      <div class="eyebrow">Technical Architecture</div>
+      <h2 class="section-title">How Muhami powers reliable legal reasoning.</h2>
+      <div class="arch">
+        <div class="card step">
+          <div class="n">01. INGESTION</div>
+          <h3>Local Dossier Index</h3>
+          <p>OCR and local indexing over previous briefs, trial records, and statutes without cloud dependencies.</p>
+        </div>
+        <div class="card step">
+          <div class="n">02. PRIVACY</div>
+          <h3>Zero-Knowledge Masking</h3>
+          <p>Deterministic regex and NER algorithms scrub confidential identifiers prior to inference.</p>
+        </div>
+        <div class="card step">
+          <div class="n">03. REASONING</div>
+          <h3>Claude Multi-Model Engine</h3>
+          <p>State-of-the-art reasoning, deep legal synthesis, and structured argument modeling via Claude.</p>
+        </div>
+        <div class="card step">
+          <div class="n">04. VALIDATION</div>
+          <h3>MCP Case-Law Audit</h3>
+          <p>Cross-verification against official court gazettes ensures no fabricated precedents ever reach court.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Founder Section -->
+  <section id="founder">
+    <div class="container">
+      <div class="eyebrow">Leadership & Vision</div>
+      <div class="card founder">
+        <div class="avatar">YÜ</div>
+        <div>
+          <h3>Av. Yusuf Ünlü</h3>
+          <div class="role">Founder & Lead Engineer • Practicing Attorney</div>
+          <p>
+            As a practicing attorney in Turkey, I built Muhami to solve the systemic operational bottlenecks our profession faces daily. 
+            Combining deep procedural procedural knowledge with modern software engineering, Muhami bridges rigorous Turkish jurisprudence with state-of-the-art autonomous AI.
+          </p>
+          <a href="https://www.linkedin.com/in/yusuf-%C3%BCnl%C3%BC-84815b10a" target="_blank" rel="noopener noreferrer" class="link">
+            Connect on LinkedIn ↗
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section>
+    <div class="container">
+      <div class="card cta-box">
+        <div class="eyebrow">Access the Future of Advocacy</div>
+        <h2 class="section-title" style="margin-inline: auto;">Join our Private Beta Cohort.</h2>
+        <p>Muhami is currently deployed to select Turkish law practices. Contact us to learn more or request early evaluation access.</p>
+        <a href="mailto:contact@muhami.co" class="btn btn-primary">Contact at contact@muhami.co</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container foot">
+      <div>© 2026 Muhami (muhami.co). Built for Turkish advocates.</div>
+      <div>Designed with macOS aesthetics. Private & Verifiable.</div>
+    </div>
+  </footer>
+</body>
+</html>
